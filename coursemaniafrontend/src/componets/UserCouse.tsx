@@ -4,7 +4,7 @@ import { Card } from "./card";
 export const UserCouse = ()=>{
     const [purchesecourse , setpurchesecourse] = useState([]);
     const GetAllPurcheseCouse = async()=>{
-        const Respones = await fetch("http://localhost:3000/api/v1/course/mypurchesecourse" , {
+        const Respones = await fetch("http://localhost:8000/api/v1/course/mypurchesecourse" , {
             method : "GET",
             headers : {
                 'Content-Type': 'application/json',
