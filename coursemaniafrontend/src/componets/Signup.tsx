@@ -19,7 +19,7 @@ export const SignUp = ()=>{
     }
     const SignupCall = async()=>{
         try{
-            const resposne = await fetch("http://localhost:3000/api/v1/users/signup" , {
+            const resposne = await fetch("https://staging-deployemnt-http.codecollabhub.xyz/api/v1/users/signup" , {
                 method : "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body : JSON.stringify({ 
