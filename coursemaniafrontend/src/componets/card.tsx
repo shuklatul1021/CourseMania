@@ -12,7 +12,7 @@ export const Card = ({imageurl , title  , price, id} : CardProps)=>{
     const location  = useLocation();
 
     const BuyCourse = async()=>{
-        const Response = await fetch(`http://localhost:8000/api/v1/course/purchesecourse/${id}`, {
+        const Response = await fetch(`https://staging-deployemnt-http.codecollabhub.xyz/api/v1/course/purchesecourse/${id}`, {
             method : "POST",
             headers : {
                 token : localStorage.getItem("token") || "",

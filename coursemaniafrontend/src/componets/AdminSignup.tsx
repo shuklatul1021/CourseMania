@@ -17,7 +17,7 @@ export const AdminSignup = ()=>{
     }
     const AdminSignupCall = async ()=>{
         try{
-            const response = await fetch("http://localhost:8000/api/v1/admin/signup", {
+            const response = await fetch("https://staging-deployemnt-http.codecollabhub.xyz/api/v1/admin/signup", {
                 method : "POST",
                 headers: { 'Content-Type': 'application/json' },
                 body : JSON.stringify({
