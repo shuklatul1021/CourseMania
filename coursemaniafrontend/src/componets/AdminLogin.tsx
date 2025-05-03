@@ -10,7 +10,7 @@ export const AdminLogin = ()=>{
     const adminPasswordRef = useRef<HTMLInputElement>(null);
 
     const AdminLoginCall = async()=>{
-        const respone  = await fetch("http://localhost:8000/api/v1/admin/login", {
+        const respone  = await fetch("https://staging-deployemnt-http.codecollabhub.xyz/api/v1/admin/login", {
             method : "POST",
             headers: { 'Content-Type': 'application/json' },
             body : JSON.stringify({
