@@ -120,8 +120,8 @@ adminrouter.put("/editcourse/:id", async(req, res)=>{
     try{
         const CheckCouseId = await client.query("SELECT id FROM courses WHERE id = $1" , [id])
         if(CheckCouseId){
-            const UpdateQuary = "UPDATE courses SET title = $1 , description = $2 , price = $3 , imageurl = $4";
-            const UpdataeCourse = await client.query(UpdateQuary , [title, description , price , imageurl]);
+            const UpdateQuary = "UPDATE courses SET title = $1 , description = $2 , price = $3 , imageurl = $4 WHERE id = $5";
+            const UpdataeCourse = await client.query(UpdateQuary , [title, description , price , imageurl, id]);
             if(UpdataeCourse){
                 res.status(200).send({
                     message : "Course Updated Succsesfully"
