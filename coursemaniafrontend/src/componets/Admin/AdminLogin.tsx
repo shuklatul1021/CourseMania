@@ -20,6 +20,7 @@ export const AdminLogin = ()=>{
         })
         if(respone.ok){
             const data = await respone.json();
+            console.log(data);
             alert("Login Successfully");
             localStorage.setItem("token" , data.token);
             Nevigate("/admindashboard")

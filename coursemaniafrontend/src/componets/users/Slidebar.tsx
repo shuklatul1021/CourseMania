@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom"
-import { Courseicon } from "../icons/courses"
-import { Menu } from "../icons/menu"
-import { HistoryIcon } from "../icons/purcheseicon"
-import { User } from "../icons/user"
+import { Menu } from "../../icons/menu"
+import { HistoryIcon } from "../../icons/purcheseicon"
+import { User } from "../../icons/user"
+import { Courseicon } from "../../icons/courses"
 
 
 export const DasbordSlidebar = ()=>{
