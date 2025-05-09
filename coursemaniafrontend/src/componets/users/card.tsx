@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom"
 
 export interface CardProps{
-    imageurl : string,
-    title : string,
-    description : string,
-    price : number
-    id : number
+    imageurl? : string,
+    title? : string,
+    description? : string,
+    price? : number
+    id? : number
 }
 
 export const Card = ({imageurl , title  , price, id} : CardProps)=>{
