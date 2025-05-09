@@ -35,7 +35,7 @@ export const Login = ()=>{
     }
     return(
         <>
-            <div className="h-screen bg-black-600">
+            <div className="h-screen min-bg-black-600">
                 <div className="flex justify-between">
                     <div className="flex ml-60 items-center mt-5">
                         <img src="https://appx-wsb-gcp.akamai.net.in/subject/2023-01-17-0.17044360120951185.jpg" className="w-10"></img>
