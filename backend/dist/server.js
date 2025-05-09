@@ -11,7 +11,10 @@ const postgress_1 = require("./config/postgress");
 const cors_1 = __importDefault(require("cors"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
-app.use((0, cors_1.default)());
+app.use((0, cors_1.default)({
+    origin: ['https://coursemania.codecollabhub.xyz', "http://localhost:5173"],
+    credentials: true
+}));
 app.use("/api/v1/users", user_1.default);
 app.use("/api/v1/admin", admin_1.default);
 app.use("/api/v1/course", courses_1.default);
@@ -19,8 +22,8 @@ const Connect = () => {
     postgress_1.client.connect()
         .then(() => console.log("Database Connected"))
         .then(() => {
-        app.listen(3000, () => {
-            console.log("The Backend Is : http://localhost:" + 3000);
+        app.listen(8000, () => {
+            console.log("The Backend Is : http://localhost:" + 8000);
         });
     });
 };

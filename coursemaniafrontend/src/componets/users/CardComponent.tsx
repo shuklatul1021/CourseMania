@@ -27,7 +27,7 @@ export const AllCouseComponet = ()=>{
     console.log(coursedata);
     return(
         <>
-            <div className="bg-black-600 h-screen flex flex-wrap ml-[288px]">
+            <div className="bg-black-600 min-h-screen flex flex-wrap ml-[288px]">
                 {coursedata.map((e ,index) =>(
                     <div key={index}>
                         <Card imageurl={e.imageurl} title={e.title} description={e.description} price={e.price} id={e.id}></Card>
